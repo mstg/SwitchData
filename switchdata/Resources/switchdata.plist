@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>org.mustafaa.switchdata_preferences</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enable</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>label</key>
+			<string>Minimum strength</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>org.mustafaa.switchdata_preferences</string>
+			<key>key</key>
+			<string>min_strength</string>
+			<key>label</key>
+			<string>Minimum strength</string>
+			<key>validTitles</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+                <string>3</string>
+                <string>4</string>
+                <string>5</string>
+            </array>
+            <key>validValues</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+                <string>3</string>
+                <string>4</string>
+                <string>5</string>
+            </array>
+            <key>default</key>
+            <string>2</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>SwitchData</string>
+</dict>
+</plist>

@@ -1,0 +1,10 @@
+Package: org.mustafaa.switchdata
+Name: SwitchData
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Switch to wifi, if signal strength is less than given setting or switch back to cellular data, if signal strength is more than or equals to given setting
+Maintainer: justpwn <mustiigezen@gmail.com>
+Author: justpwn <mustiigezen@gmail.com>
+Section: Tweaks
+dev: justpwn
