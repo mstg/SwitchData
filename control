@@ -1,11 +1,11 @@
 Package: org.mustafaa.switchdata
 Name: SwitchData
 Depends: mobilesubstrate, preferenceloader
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
 Description: Switch between wifi and cellular data depending on the service signal
 Maintainer: switchpwn <mustiigezen@gmail.com>
 Author: switchpwn <mustiigezen@gmail.com>
 Section: Tweaks
 dev: switchpwn
-Icon: file:///Library/PreferenceBundles/switchdata.bundle/switchdata2x.png
+Icon: file:///Library/PreferenceBundles/switchdata.bundle/switchdata@2x.png
