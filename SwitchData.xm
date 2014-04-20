@@ -1,4 +1,4 @@
-/* Created by Mustafa Gezen on 18.04 */
+/* Created by Mustafa Gezen on 18.04.2014 */
 #include "SwitchData.h"
 
 %hook SBApplicationIcon
