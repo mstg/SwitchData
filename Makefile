@@ -1,5 +1,7 @@
-ARCHS = armv7
-TARGET = iphone:latest:6.1
+ARCHS = armv7 armv7s arm64
+TARGET = iphone:latest:7.0
+THEOS_BUILD_DIR = debs
+
 include theos/makefiles/common.mk
 
 TWEAK_NAME = SwitchData
