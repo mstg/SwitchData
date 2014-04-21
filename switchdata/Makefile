@@ -1,3 +1,6 @@
+ARCHS = armv7 armv7s arm64
+TARGET = iphone:latest:7.0
+
 include theos/makefiles/common.mk
 
 BUNDLE_NAME = switchdata
