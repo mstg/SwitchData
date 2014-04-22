@@ -16,6 +16,18 @@
 			<key>label</key>
 			<string>Enable</string>
 		</dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <key>default</key>
+            <false/>
+            <key>defaults</key>
+            <string>org.mustafaa.switchdata_preferences</string>
+            <key>key</key>
+            <string>enable_data_if_wi</string>
+            <key>label</key>
+            <string>Enable data on good service</string>
+        </dict>
 		<dict>
 			<key>cell</key>
 			<string>PSStaticTextCell</string>
@@ -52,6 +64,26 @@
             <key>default</key>
             <string>2</string>
 		</dict>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+        </dict>
+        <dict>
+            <key>bundle</key>
+            <string>AppList</string>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>isController</key>
+            <true/>
+            <key>label</key>
+            <string>Wifi only apps</string>
+            <key>ALSettingsPath</key>
+            <string>/var/mobile/Library/Preferences/org.mustafaa.switchdata.plist</string>
+            <key>ALSettingsKeyPrefiz</key>
+            <string>SwitchData-</string>
+            <key>ALSettingsDefaultValue</key>
+            <false/>
+        </dict>
 	</array>
 	<key>title</key>
 	<string>SwitchData</string>
