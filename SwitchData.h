@@ -1,12 +1,14 @@
 /* Created by Mustafa Gezen on 18.04.2014 */
-
 #include <CoreTelephony/CTCellularDataPlan.h>
 
 static int signal_strength;
 static int signal_min;
 static bool wiFiEnabled;
+static bool enable_data_if_wi;
 static void loadPreferences();
-NSMutableDictionary *prefs = nil;
+static NSString *identifier;
+static NSString *key;
+static NSMutableDictionary *prefs = nil;
 
 @interface SBWiFiManager
     + (id)sharedInstance;
@@ -23,14 +25,9 @@ typedef enum {
 
 @interface SBApplicationIcon
     - (void)launchFromLocation:(SBIconLocation)location;
-    - (NSString *)displayName;
 @end
 
 @interface SBTelephonyManager
     + (id)sharedTelephonyManager;
     - (int)signalStrengthBars;
 @end
-
-static void loadPreferences(void) {
-    prefs = [NSMutableDictionary dictionaryWithContentsOfFile: [NSString stringWithFormat:@"%@/Library/Preferences/%@", NSHomeDirectory(), @"org.mustafaa.switchdata_preferences.plist"]];
-}
