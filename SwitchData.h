@@ -6,8 +6,6 @@ static int signal_min;
 static bool wiFiEnabled;
 static bool enable_data_if_wi;
 static void loadPreferences();
-static NSString *identifier;
-static NSString *key;
 static NSMutableDictionary *prefs = nil;
 
 @interface SBWiFiManager
