@@ -79,7 +79,7 @@
             <string>Wifi only apps</string>
             <key>ALSettingsPath</key>
             <string>/var/mobile/Library/Preferences/org.mustafaa.switchdata.plist</string>
-            <key>ALSettingsKeyPrefiz</key>
+            <key>ALSettingsKeyPrefix</key>
             <string>SwitchData-</string>
             <key>ALSettingsDefaultValue</key>
             <false/>
