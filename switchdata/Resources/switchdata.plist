@@ -15,6 +15,8 @@
             <string>enabled</string>
             <key>label</key>
             <string>Enable</string>
+            <key>PostNotification</key>
+            <string>org.mustafaa.switchdata/reloadSettings</string>
         </dict>
         <dict>
             <key>cell</key>
@@ -27,6 +29,8 @@
             <string>enable_data_if_wi</string>
             <key>label</key>
             <string>Enable data on good service</string>
+            <key>PostNotification</key>
+            <string>org.mustafaa.switchdata/reloadSettings</string>
         </dict>
         <dict>
             <key>cell</key>
@@ -61,8 +65,64 @@
                 <string>4</string>
                 <string>5</string>
             </array>
-            <key>default</key>
-            <string>2</string>
+            <key>PostNotification</key>
+            <string>org.mustafaa.switchdata/reloadSettings</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+        </dict>
+        <dict>
+            <key>bundle</key>
+            <string>AppList</string>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>label</key>
+            <string>Wifi only apps</string>
+            <key>isController</key>
+            <string>1</string>
+            <key>ALSettingsPath</key>
+            <string>/var/mobile/Library/Preferences/org.mustafaa.switchdata.plist</string>
+            <key>ALSettingsKeyPrefix</key>
+            <string>SwitchData-</string>
+            <key>ALSettingsDefaultValue</key>
+            <string>0</string>
+            <key>ALChangeNotification</key>
+            <string>org.mustafaa.switchdata/reloadSettings</string>
+            <key>ALSectionDescriptors</key>
+            <array>
+                <dict>
+                    <key>items</key>
+                    <array>
+                    </array>
+                    <key>footer-title</key>
+                    <string>Switch to wifi when you launch enabled applications</string>
+                </dict>
+                <dict>
+                    <key>title</key>
+                    <string>System Applications</string>
+                    <key>predicate</key>
+                    <string>isSystemApplication = TRUE</string>
+                    <key>cell-class-name</key>
+                    <string>ALSwitchCell</string>
+                    <key>icon-size</key>
+                    <string>29</string>
+                    <key>suppress-hidden-apps</key>
+                    <string>1</string>
+                </dict>
+                <dict>
+                    <key>title</key>
+                    <string>User Applications</string>
+                    <key>predicate</key>
+                    <string>isSystemApplication = FALSE</string>
+                    <key>cell-class-name</key>
+                    <string>ALSwitchCell</string>
+                    <key>icon-size</key>
+                    <string>29</string>
+                    <key>suppress-hidden-apps</key>
+                    <string>1</string>
+                </dict>
+            </array>
         </dict>
     </array>
     <key>title</key>
