@@ -7,6 +7,7 @@ static bool wiFiEnabled;
 static bool enable_data_if_wi;
 static void loadPreferences();
 static NSMutableDictionary *prefs = nil;
+static NSString *key;
 
 @interface SBWiFiManager
     + (id)sharedInstance;
@@ -23,6 +24,7 @@ typedef enum {
 
 @interface SBApplicationIcon
     - (void)launchFromLocation:(SBIconLocation)location;
+    - (id)applicationBundleID;
 @end
 
 @interface SBTelephonyManager
